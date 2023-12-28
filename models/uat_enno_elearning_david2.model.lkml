@@ -2,7 +2,7 @@ connection: "ennoconn-it-mssql-test-001-ennolearning"
 
 access_grant: user_id {
   user_attribute: id
-  allowed_values: ["2", "6", "14", "15","21"] #Darren, Joan, Vivian
+  allowed_values: ["2","3", "6", "14", "15","21"] #Darren, Joan, Vivian
 }
 
 
