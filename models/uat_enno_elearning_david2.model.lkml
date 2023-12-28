@@ -1,5 +1,11 @@
 connection: "ennoconn-it-mssql-test-001-ennolearning"
 
+access_grant: user_id {
+  user_attribute: id
+  allowed_values: ["2", "6", "14", "15"] #Darren, Joan, Vivian
+}
+
+
 # include all the views
 include: "/views/**/*.view.lkml"
 
@@ -16,5 +22,6 @@ explore: course_m_tbl {}
 
 explore: employee_tbl {}
 
-explore: looker_train_time_summary {}
-
+explore: looker_train_time_summary {
+  required_access_grants: [user_id]
+}
